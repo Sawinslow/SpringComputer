@@ -26,12 +26,12 @@ CREATE TABLE `computer` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `brand` varchar(30) DEFAULT NULL,
   `type` varchar(30) DEFAULT NULL,
-  `cpuType` varchar(30) DEFAULT NULL,
+  `cpu_type` varchar(30) DEFAULT NULL,
   `brands` varchar(30) DEFAULT NULL,
   `ramGB` int(11) DEFAULT NULL,
   `cost` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,6 +40,7 @@ CREATE TABLE `computer` (
 
 LOCK TABLES `computer` WRITE;
 /*!40000 ALTER TABLE `computer` DISABLE KEYS */;
+INSERT INTO `computer` VALUES (1,'Something',NULL,'Intel','Razor',12,15),(2,'be quiet','Full Tower','Intel','Razor',18,210);
 /*!40000 ALTER TABLE `computer` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-10-23 21:07:50
+-- Dump completed on 2019-10-24 13:28:08

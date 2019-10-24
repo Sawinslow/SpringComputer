@@ -3,7 +3,7 @@ package dmacc.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import dmacc.computer.computers;
+import dmacc.computer.computer;
 
 @Repository
-public interface ComputerRepository extends JpaRepository<computers, Long> { }
+public interface ComputerRepository extends JpaRepository<computer, Long> { }

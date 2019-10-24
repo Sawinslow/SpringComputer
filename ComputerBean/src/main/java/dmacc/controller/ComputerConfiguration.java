@@ -3,15 +3,13 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import dmacc.computer.Memory;
-import dmacc.computer.computers;
+import dmacc.computer.computer;
 @Configuration
 public class ComputerConfiguration {
 	@Bean
-	public computers computer() {
-		computers bean = new computers("Something" );
-//		bean.setBrand("CoolMaster");
-//		bean.setType("MiniTower");
-//		bean.setCpuType("AMD");
+	public computer computer() {
+		computer bean = new computer("Something" );
+
 		bean.setMemory(memory());
 		return bean;
 	}
